@@ -10,7 +10,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:5000/books")
+      .get("http://3.27.226.103:5000/books")
       .then((response) => {
         setBooks(response.data.data);
         setLoading(false);

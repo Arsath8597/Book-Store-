@@ -12,7 +12,7 @@ const DeleteBooks = () => {
   const handleDelete = () => {
     setLoading(true);
     axios
-      .delete(`http://localhost:5000/books/${id}`)
+      .delete(`http://3.27.226.103:5000/books/${id}`)
       .then(() => {
         setLoading(false);
         navigation("/");

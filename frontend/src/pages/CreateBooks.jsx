@@ -19,7 +19,7 @@ const CreateBooks = () => {
     };
     setLoading(true);
     axios
-      .post("http://localhost:5000/books", data)
+      .post("http://3.27.226.103:5000/books", data)
       .then(() => {
         setLoading(false);
         navigation("/");
